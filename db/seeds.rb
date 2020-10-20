@@ -61,3 +61,25 @@ pinot_noir = Wine.create(
   abv: 13.50,
   color: "red"
 )
+
+vodka = Liquor.create(name: "Grey Goose", kind: "Vodka")
+peach_crown = Liquor.create(name: "Crown Royal Peach", kind: "Whiskey")
+captain = Liquor.create(name: "Captain Morgan", kind: "Spiced Rum")
+don_julio = Liquor.create(name: "Don Julio", kind: "Tequila")
+jim_beam = Liquor.create(name: "Jim Beam", kind: "Bourbon")
+crown = Liquor.create(name: "Crown Royal", kind: "Whiskey")
+johnny_walker = Liquor.create(name: "Johnny Walker", kind: "Scotch")
+
+
+cranberry = Mixer.create(name: "Cranberry Juice")
+tea = Mixer.create(name: "Sweet/Unsweet Tea")
+pineapple = Mixer.create(name: "Pineapple Juice")
+orange = Mixer.create(name: "Orange Juice")
+coke = Mixer.create(name: "Coca-cola")
+club_soda = Mixer.create(name: "Club Soda")
+sprite = Mixer.create(name: "Sprite")
+cherries = Mixer.create(name: "Cherries")
+lime = Mixer.create(name: "Lime")
+
+Cocktail.create(name: , mixer_id: , liquor_id: )
+

@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  mixer: one
+  liquor: one
+
+two:
+  name: MyString
+  mixer: two
+  liquor: two
