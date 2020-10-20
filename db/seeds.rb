@@ -8,6 +8,9 @@
 
 Beer.destroy_all
 Wine.destroy_all
+Liquor.destroy_all
+Mixer.destroy_all
+Cocktail.destroy_all
 
 heineken = Beer.create(
   name: "Heineken",
@@ -70,7 +73,6 @@ jim_beam = Liquor.create(name: "Jim Beam", kind: "Bourbon")
 crown = Liquor.create(name: "Crown Royal", kind: "Whiskey")
 johnny_walker = Liquor.create(name: "Johnny Walker", kind: "Scotch")
 
-
 cranberry = Mixer.create(name: "Cranberry Juice")
 tea = Mixer.create(name: "Sweet/Unsweet Tea")
 pineapple = Mixer.create(name: "Pineapple Juice")
@@ -80,6 +82,13 @@ club_soda = Mixer.create(name: "Club Soda")
 sprite = Mixer.create(name: "Sprite")
 cherries = Mixer.create(name: "Cherries")
 lime = Mixer.create(name: "Lime")
+neat = Mixer.create(name: "Neat")
 
-Cocktail.create(name: , mixer_id: , liquor_id: )
+Cocktail.create(name: "Vodka Cranberry", mixer_id: cranberry.id, liquor_id: vodka.id)
+Cocktail.create(name: "Georgia Peach Tea", mixer_id: tea.id, liquor_id: peach_crown.id)
+Cocktail.create(name: "Captain & Coke", mixer_id: coke.id, liquor_id: captain.id)
+Cocktail.create(name: "Screwdriver", mixer_id: orange.id, liquor_id: vodka.id)
+Cocktail.create(name: "Vodka Sprite", mixer_id: sprite.id, liquor_id: vodka.id)
+Cocktail.create(name: "Whiskey Sprite", mixer_id: sprite.id, liquor_id: whiskey.id)
+
 
