@@ -6,11 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Cocktail.destroy_all
 Beer.destroy_all
 Wine.destroy_all
 Liquor.destroy_all
 Mixer.destroy_all
-Cocktail.destroy_all
 
 heineken = Beer.create(
   name: "Heineken",
@@ -84,11 +84,11 @@ cherries = Mixer.create(name: "Cherries")
 lime = Mixer.create(name: "Lime")
 neat = Mixer.create(name: "Neat")
 
-Cocktail.create(name: "Vodka Cranberry", mixer_id: cranberry.id, liquor_id: vodka.id)
-Cocktail.create(name: "Georgia Peach Tea", mixer_id: tea.id, liquor_id: peach_crown.id)
-Cocktail.create(name: "Captain & Coke", mixer_id: coke.id, liquor_id: captain.id)
-Cocktail.create(name: "Screwdriver", mixer_id: orange.id, liquor_id: vodka.id)
-Cocktail.create(name: "Vodka Sprite", mixer_id: sprite.id, liquor_id: vodka.id)
-Cocktail.create(name: "Whiskey Sprite", mixer_id: sprite.id, liquor_id: whiskey.id)
+Cocktail.create(name: "Vodka Cranberry", mixer: cranberry, liquor: vodka)
+Cocktail.create(name: "Georgia Peach Tea", mixer: tea, liquor: peach_crown)
+Cocktail.create(name: "Captain & Coke", mixer: coke, liquor: captain)
+Cocktail.create(name: "Screwdriver", mixer: orange, liquor: vodka)
+Cocktail.create(name: "Vodka Sprite", mixer: sprite, liquor: vodka)
+Cocktail.create(name: "Whiskey Sprite", mixer: sprite, liquor: crown)
 
 
